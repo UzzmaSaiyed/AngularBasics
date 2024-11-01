@@ -1,7 +1,7 @@
 .h1 {
     background-color: rgb(210, 168, 138);
     height: wrap;
-    width: wrap;
+    width: 600px;
     border: 10px solid black;
     padding: 20px 20px 20px 20px;
 }

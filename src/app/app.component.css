@@ -2,9 +2,9 @@
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    border: 5px solid blueviolet;
+    border: 5px solid rgb(116, 16, 12);
 }
 
 .available {
-    background-color: chocolate;
+    background-color: rgb(115, 125, 46);
 }
