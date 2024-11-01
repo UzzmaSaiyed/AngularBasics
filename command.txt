@@ -1,0 +1,8 @@
+sudo npm install -g @angular/cli -> To install angular-cli globally.
+ng -> To check whether angular is installed or not.
+ng new appname -> to create angular app
+npm run start -> start server for angular app
+4200: default port number
+
+
+
