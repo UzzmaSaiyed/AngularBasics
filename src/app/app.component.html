@@ -9,7 +9,39 @@
 </head>
 
 <body>
+  <!-- string interpolation, text binding, {{handle bar}} -->
   <h1>Hello {{name}}!!!</h1>
+
+  <!-- property binding -->
+  <img [src]="imageurl" height="500px" width="500px">
+
+  <!-- Event binding -->
+  <div class="button">
+    <button (click)="printButton()">Click Me</button>
+  </div>
+  <br /><br />
+  <!-- class binding -->
+  <table border="0">
+    <tr>
+      <td>
+        <div class="circle" [class.available]="isAvailable">
+        </div>
+      </td>
+      <td></td>
+      <td>
+        <div class="circle" [class.available]="isNotAvailable">
+        </div>
+
+      </td>
+    </tr>
+
+  </table>
+
+  <br /><br />
+
+  <!-- Category Component called here -->
+  <app-category [cname]="Category"></app-category>
+
 
 </body>
 
