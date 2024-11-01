@@ -11,7 +11,9 @@
     <div class="h1">
         <h1>Category</h1>
         <h1>{{cname}}</h1>
+        <h2>Id: {{param}}</h2>
 
+        <!-- Passing values from parent to child components -->
         <app-product [pname]="'Pen'"
             [imgURL]="'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR77kEzzVCEOE1HsNElQvlHSJvQiGRTi6ymHE7lsRtFE5V-UfzZj5HwPyM066zfwluhmJueUZ5eLQm8HfOfHKnthLc0JTTmyc6H94GTPCvRYRO_ANm6ua_iqQ'" />
         <app-product [pname]="'Pencil'"

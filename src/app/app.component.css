@@ -8,3 +8,12 @@
 .available {
     background-color: rgb(115, 125, 46);
 }
+
+.list {
+    list-style-type: square;
+    padding: 20;
+    margin: 20;
+    font-size: large;
+    background-color: rgb(228, 151, 216);
+    width: 100%;
+}

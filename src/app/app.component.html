@@ -3,6 +3,7 @@
 
 <head>
   <title>Angular Demo App</title>
+  <base href="/" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -31,7 +32,6 @@
       <td>
         <div class="circle" [class.available]="isNotAvailable">
         </div>
-
       </td>
     </tr>
 
@@ -40,7 +40,20 @@
   <br /><br />
 
   <!-- Category Component called here -->
-  <app-category [cname]="Category"></app-category>
+  <!-- Passing values from parent to child components -->
+  <!-- <app-category [cname]="Category"></app-category>
+  
+  <app-about></app-about>
+  <app-services></app-services> -->
+
+  <h1>Routing Demo</h1>
+  <ul class="list">
+    <li><a routerLink="/category/1">Category</a></li>
+    <li><a routerLink="/about">About</a></li>
+    <li><a routerLink="/services">Services</a></li>
+  </ul>
+
+  <router-outlet></router-outlet>
 
 
 </body>
