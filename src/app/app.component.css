@@ -17,3 +17,23 @@
     background-color: rgb(228, 151, 216);
     width: 100%;
 }
+
+
+
+.product {
+    background-color: rgb(32, 139, 227);
+    width: 15%;
+    border: 10px solid black;
+    padding: 20px;
+
+}
+
+.prod {
+    width: 100%;
+    background-color: rgb(160, 16, 164);
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: calc(20%/3);
+    row-gap: 30px;
+    padding: 5%;
+}

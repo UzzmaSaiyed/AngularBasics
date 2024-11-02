@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { RouterModule } from '@angular/router';
+import { Product } from './types';
+
 
 @Component({
   selector: 'app-root',
@@ -31,4 +33,31 @@ export class AppComponent {
   isAvailable = true;
   isNotAvailable = false;
   Category = 'Stationary';
+
+  product: Product = {
+    id: 4,
+    name: 'Notebook',
+    quantity: 10,
+    price: 20
+  }
+
+  products: Product[] =
+    [
+      { id: 1, name: 'Pen', quantity: 20, price: 5 },
+      { id: 2, name: 'Pencil', quantity: 0, price: 2 },
+      { id: 3, name: 'Ruler', quantity: 15, price: 10 },
+      { id: 4, name: 'Notebook', quantity: 10, price: 20 },
+      { id: 5, name: 'Eraser', quantity: 5, price: 3 },
+      { id: 1, name: 'Pen', quantity: 0, price: 5 },
+      { id: 2, name: 'Pencil', quantity: 30, price: 2 },
+      { id: 3, name: 'Ruler', quantity: 15, price: 10 },
+      { id: 4, name: 'Notebook', quantity: 10, price: 20 },
+      { id: 5, name: 'Eraser', quantity: 0, price: 3 },
+      { id: 1, name: 'Pen', quantity: 20, price: 5 },
+      { id: 2, name: 'Pencil', quantity: 0, price: 2 },
+      { id: 3, name: 'Ruler', quantity: 15, price: 10 },
+      { id: 4, name: 'Notebook', quantity: 10, price: 20 },
+      { id: 5, name: 'Eraser', quantity: 5, price: 3 }
+
+    ]
 }
