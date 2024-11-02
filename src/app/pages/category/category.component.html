@@ -13,13 +13,26 @@
         <h1>{{cname}}</h1>
         <h2>Id: {{param}}</h2>
 
+        <button (click)="onChange()">Change Name</button>
+        <br />
+
+        @if(showProducts)
+        {
         <!-- Passing values from parent to child components -->
-        <app-product [pname]="'Pen'"
+        <app-product [pname]="prod"
             [imgURL]="'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR77kEzzVCEOE1HsNElQvlHSJvQiGRTi6ymHE7lsRtFE5V-UfzZj5HwPyM066zfwluhmJueUZ5eLQm8HfOfHKnthLc0JTTmyc6H94GTPCvRYRO_ANm6ua_iqQ'" />
         <app-product [pname]="'Pencil'"
             [imgURL]="'https://m.media-amazon.com/images/I/51nM0sSZUQL._AC_UF1000,1000_QL80_.jpg'" />
         <app-product [pname]="'Torch'"
             [imgURL]="'https://5.imimg.com/data5/AS/RK/MY-73786241/long-range-led-torch.jpg'" />
+        }
+        <button (click)="toggleProducts()">
+            @if(showProducts){
+            Hide}
+            @else {Show}
+        </button>
+
+
 
     </div>
 

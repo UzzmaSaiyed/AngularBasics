@@ -60,4 +60,5 @@ export class AppComponent {
       { id: 5, name: 'Eraser', quantity: 5, price: 3 }
 
     ]
+
 }
