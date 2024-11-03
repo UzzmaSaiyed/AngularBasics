@@ -1,3 +1,13 @@
 <div class="aboutus">
     <h1>About Us</h1>
+    <!-- Pipes -->
+    <!-- To use pipes import CommonModule in ts file -->
+    <!-- <h2>{{name.toUpperCase()}}</h2> Basic JS -->
+    <h2>{{name | lowercase}}</h2>
+    <h2>{{name | uppercase}}</h2>
+    <!-- User defined Pipe -->
+    <!-- import custom pipe in ts file also -->
+    <h2>{{name | star:7}}</h2>
+
+
 </div>

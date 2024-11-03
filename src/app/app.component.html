@@ -38,7 +38,8 @@
       <!-- <h2>Even {{$even}}</h2>  By default even is available -->
       <!-- <h2>Odd {{$odd}}</h2>  By default odd is available -->
       <h2>Name: {{prod.name}}</h2>
-      <h2>Price: {{prod.price}}</h2>
+      <!-- Pipe currency with parameter is used -->
+      <h2>Price: {{prod.price | currency:'INR'}}</h2>
       <h2>Quantity: {{prod.quantity}}</h2>
       <!-- Conditional and loop rendering combined -->
       @if(prod.quantity==0)
