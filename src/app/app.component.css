@@ -10,6 +10,7 @@
 }
 
 .list {
+    border: 10px solid black;
     list-style-type: square;
     padding: 20;
     margin: 20;

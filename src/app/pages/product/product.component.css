@@ -1,7 +1,7 @@
 .product {
     background-color: rgb(109, 178, 181);
     height: 550px;
-    width: 500px;
+    width: wrap;
     border: 10px solid black;
     padding: 20px 20px 20px 20px;
 }

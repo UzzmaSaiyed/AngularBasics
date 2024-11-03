@@ -15,7 +15,7 @@ export class CategoryComponent {
   param = ""
   prod = "Pen"
 
-  showProducts = true
+  showProducts = false
 
   // to check which route is activated
   constructor(private activatedRoute: ActivatedRoute) {
