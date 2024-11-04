@@ -13,11 +13,12 @@
                     <p>Name is Required.</p>
                     }
                     @else if(name.errors?.['minlength']!==undefined){
-                    <p>Minimum Length must be 3.</p>
-                    <!-- <p>Minimum Length must be {{name.errors?.['minLength']['requiredLength']}}.</p> -->
+                    <p>Minimum Length must be {{
+                        name.errors?.['minlength'].requiredLength }}.</p>
                     }
                     @else {
-                    <p>Maximum Length must be 8.</p>
+                    <p>Maximum Length must be {{
+                        name.errors?.['maxlength'].requiredLength }}.</p>
                     }
 
                     }
@@ -52,7 +53,7 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2"><button type="click" [disabled]=serviceForm.invalid
+                <td colspan="2"><button type="click" [disabled]="serviceForm.invalid"
                         (click)="printData()">Submit</button></td>
             </tr>
         </table>
