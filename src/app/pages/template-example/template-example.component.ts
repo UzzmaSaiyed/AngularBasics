@@ -11,6 +11,7 @@ import { PlacesService } from './places.service';
     ` <div class="temp">
       <h1>Welcome to Angular Template Example</h1>
       <p>This is a simple Angular component using template syntax.</p>
+      <h1>This is example of Dependency Injection and Directive</h1>
       <ul>
       <li *ngFor="let place of places">{{place}}</li>
       </ul>
