@@ -1,3 +1,66 @@
 <div class="services">
-    <h1>Services we offered</h1>
+    <!-- Reactive Form creation and validation -->
+    <h1>Fill this form for Service related queries</h1>
+
+    <form class="formStyle" [formGroup]="serviceForm">
+        <table>
+            <tr>
+                <td><input type="text" placeholder="Enter Your Name" [formControl]="name"></td>
+                <td>@if(name.status == "INVALID" && name.touched==true)
+                    {
+                    @if(name.errors?.['required']!==undefined)
+                    {
+                    <p>Name is Required.</p>
+                    }
+                    @else if(name.errors?.['minlength']!==undefined){
+                    <p>Minimum Length must be 3.</p>
+                    <!-- <p>Minimum Length must be {{name.errors?.['minLength']['requiredLength']}}.</p> -->
+                    }
+                    @else {
+                    <p>Maximum Length must be 8.</p>
+                    }
+
+                    }
+                </td>
+            </tr>
+            <tr>
+                <td><input type="number" placeholder="Enter Your Mobile Number" [formControl]="phone">
+                </td>
+                <td>@if(phone.status == "INVALID" && phone.touched==true)
+                    {
+                    @if(phone.errors?.['required']!==undefined)
+                    {
+                    <p>Mobile Number is Required</p>
+                    }
+                    @else {
+                    <p>Mobile Number must be equal to 10.</p>
+                    }}
+                </td>
+            </tr>
+            <tr>
+                <td><input type="email" placeholder="Enter Your Email" [formControl]="email"></td>
+                <td>@if(email.status == "INVALID" && email.touched==true)
+                    {
+                    @if(email.errors?.['required']!==undefined)
+                    {
+                    <p>Email is Required</p>
+                    }
+                    @else {
+                    <p>It must be a valid email.</p>
+
+                    }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="click" [disabled]=serviceForm.invalid
+                        (click)="printData()">Submit</button></td>
+            </tr>
+
+
+
+
+
+
+        </table>
+    </form>
 </div>
