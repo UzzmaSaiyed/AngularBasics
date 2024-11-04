@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { PlacesService } from './places.service';
 
 @Component({
   selector: 'app-template-example',
@@ -20,6 +21,22 @@ import { Component } from '@angular/core';
 })
 export class TemplateExampleComponent {
 
-  places: string[] = ["LA", "NY", "NZ"]
+  // places: string[] = ["LA", "NY", "NZ"]
+
+  places: string[] = [];
+  // loosely coupled service by creating dependency and then we need to register this dependency in the module.ts file
+  // Dependency injection
+  constructor(service: PlacesService) {
+    this.places = service.getPlaces();
+
+  }
+
+  // constructor() {
+  //   // Tightly coupled service
+  //   let service = new PlacesService();
+  //   this.places = service.getPlaces();
+  // }
+
+
 
 }
