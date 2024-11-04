@@ -23,7 +23,7 @@ export class TemplateExampleComponent {
 
   // places: string[] = ["LA", "NY", "NZ"]
 
-  places: string[] = [];
+  places;
   // loosely coupled service by creating dependency and then we need to register this dependency in the module.ts file
   // Dependency injection
 
