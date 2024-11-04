@@ -3,12 +3,13 @@ import { RouterOutlet } from '@angular/router';
 import { RouterModule } from '@angular/router';
 import { Product } from './types';
 import { CommonModule } from '@angular/common';
+import { TemplateExampleComponent } from './pages/template-example/template-example.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterModule, CommonModule],
+  imports: [RouterOutlet, RouterModule, CommonModule, TemplateExampleComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
