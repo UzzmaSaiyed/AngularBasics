@@ -23,7 +23,8 @@
 
 .product {
     background-color: rgb(32, 139, 227);
-    width: 15%;
+    width: 250px;
+    height: 250px;
     border: 10px solid black;
     padding: 20px;
 

@@ -44,6 +44,9 @@ export class AppComponent {
     quantity: 10,
     price: 20
   }
+  trackById(index: number, item: any): number {
+    return item.id;
+  }
 
   products: Product[] =
     [

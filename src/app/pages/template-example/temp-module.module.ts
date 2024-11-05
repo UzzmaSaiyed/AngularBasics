@@ -16,3 +16,5 @@ import { BrowserModule } from '@angular/platform-browser';
   providers: [PlacesService],
 })
 export class TempModuleModule { }
+
+// Also working without module because the components are standalone
