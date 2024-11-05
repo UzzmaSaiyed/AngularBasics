@@ -26,7 +26,7 @@ export class TemplateExampleComponent {
 
   places;
   // loosely coupled service by creating dependency and then we need to register this dependency in the module.ts file
-  // Dependency injection
+  // Dependency injection, Service
 
   constructor(service: PlacesService) {
     this.places = service.getPlaces();

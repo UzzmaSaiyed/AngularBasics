@@ -1,15 +1,17 @@
+import { HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { RouterModule } from '@angular/router';
 import { Product } from './types';
 import { CommonModule } from '@angular/common';
 import { TemplateExampleComponent } from './pages/template-example/template-example.component';
+import { ObservabledemoComponent } from './pages/observabledemo/observabledemo.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterModule, CommonModule, TemplateExampleComponent],
+  imports: [RouterOutlet, RouterModule, CommonModule, TemplateExampleComponent, ObservabledemoComponent, HttpClientModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
